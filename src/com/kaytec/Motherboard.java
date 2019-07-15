@@ -5,9 +5,9 @@ public class Motherboard {
     private String manufacturer;
     private int ramSlots;
     private int cardSlots;
-    private int bios;
+    private String bios;
 
-    public Motherboard(String model, String manufacturer, int ramSlots, int cardSlots, int bios) {
+    public Motherboard(String model, String manufacturer, int ramSlots, int cardSlots, String bios) {
         this.model = model;
         this.manufacturer = manufacturer;
         this.ramSlots = ramSlots;
@@ -51,11 +51,11 @@ public class Motherboard {
         this.cardSlots = cardSlots;
     }
 
-    public int getBios() {
+    public String getBios() {
         return bios;
     }
 
-    public void setBios(int bios) {
+    public void setBios(String bios) {
         this.bios = bios;
     }
 }
